@@ -1,4 +1,4 @@
 # Empires
 Empires Game
 
-This is the beginning
+This is the beginning!
