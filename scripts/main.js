@@ -7,7 +7,7 @@ var $timeDay     = $("span[data-time='day']"),
 var G = {
 
     settings: {
-        currentTickSpeed: 50,
+        currentTickSpeed: 1000,
         time: {
             ticks: 0,
             day: 1,
