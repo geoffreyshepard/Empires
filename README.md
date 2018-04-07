@@ -1,4 +1,4 @@
 # Empires
 Empires Game
 
-This is the beginning!!!
+Game is live at [https://geoffreyshepard.github.io/Empires/]{https://geoffreyshepard.github.io/Empires/}
