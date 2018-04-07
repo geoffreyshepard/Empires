@@ -25,6 +25,7 @@ G.res = {
                 bonus       = eval(resName).bonus;
             
             current += (increment * bonus);
+            current = Number(current.toFixed(2));
             if(current > max) current = max;
             if(current < 0) current = 0;
 
