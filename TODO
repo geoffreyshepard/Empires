@@ -1,0 +1,46 @@
+
+Todo:
+☐ Create Basic Todo List for first Version of Game
+
+
+
+
+☐ Basic Game Functions
+    ☐ Resources @resources
+    ☐ Buildings @buildings
+    ☐ Research @research
+    ☐ Army @army
+    ☐ Basic AI @ai
+    ☐ Save/Load Files @saveload
+    ☐ Achievements @achievements
+
+
+
+
+☐ Resources @resources
+    ☐ Develop Basic Structure of the resources 
+        Current, Increment (Based on Building Production),
+        Max Capacity, Bonus
+    ☐ Add Basic HTML to show current res, max res, increment amount
+    ☐ Add Basic Increment Click to Add resources
+    ☐ Decide the types of resources the game will have
+        Wood, Stone, Food
+        Lumber, Ore, Herbs
+        
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Archive:

@@ -5,7 +5,7 @@ var $timeDay     = $("span[data-time='day']"),
 
 // Game Settings and Initialization
 var G = {
-
+    
     settings: {
         currentTickSpeed: 1000,
         time: {
@@ -17,13 +17,14 @@ var G = {
     },
 
     init : function(){
-        this.loop()
+        this.loop();
     },
 
     loop : function(){
         setTimeout(
             function(){ 
-                G.updateTime(); 
+                G.updateTime();
+                // G.res.updateRes(); 
                 G.loop();
             },
             this.settings.currentTickSpeed
@@ -40,7 +41,7 @@ G.updateTime = function(){
 	if(G.settings.time.day > 30){
 		G.settings.time.day = 1;
 		G.settings.time.month ++;
-		// TODO : Add Autosave Here
+		//TODO: @saveload - Add Autosave Here 
 		if(G.settings.time.month > 12){
 			G.settings.time.month = 1;
 			G.settings.time.year ++;
@@ -55,4 +56,3 @@ G.updateTime = function(){
 
 
 
-G.init();
