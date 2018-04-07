@@ -24,7 +24,7 @@ var G = {
         setTimeout(
             function(){ 
                 G.updateTime();
-                // G.res.updateRes(); 
+                G.res.updateRes(); 
                 G.loop();
             },
             this.settings.currentTickSpeed

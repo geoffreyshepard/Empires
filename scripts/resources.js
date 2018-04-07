@@ -18,11 +18,17 @@ G.res = {
     updateRes : function() {
 
         for(i=0; i<G.res.array.length; i++){
-            G.res.array[i].current += (G.res.array[i].increment * G.res.array[i].bonus);
-            // Keep within bounds of zero and max you can hold
-            if(G.res.array[i].current > G.res.array[i].max) G.res.array[i].current = G.res.array[i].max;
-            if(G.res.array[i].current < 0) G.res.array[i].current = 0;
-            console.log()
+            var resName     = "G.res." + G.res.array[i],
+                current     = eval(resName).current,
+                increment   = eval(resName).increment,
+                max         = eval(resName).max,
+                bonus       = eval(resName).bonus;
+            
+            current += (increment * bonus);
+            if(current > max) current = max;
+            if(current < 0) current = 0;
+
+            eval(resName).current = current;
         }
 
     },
