@@ -15,7 +15,7 @@ body {
   line-height: 1;
 }
 
-ol, ul {
+ol, ul, li {
   list-style: none;
 }
 
@@ -39,7 +39,25 @@ table {
 }
 
 * {
-  padding: 0;
-  margin: 0;
   box-sizing: border-box;
+}
+
+body {
+  background: #F4f4f4;
+}
+
+header {
+  background: #fff;
+  height: 40px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: calc(100% - 5px) 5px;
+}
+
+header .timeline {
+  text-align: center;
+  grid-column: 1 / 4;
+  grid-row: 2 / 3;
+  background: #000;
 }

@@ -1,0 +1,15 @@
+header{
+    background: $white;
+    height: 40px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: calc(100% - 5px) 5px;
+    
+    .timeline{
+        text-align: center;
+        grid-column: 1 / 4;
+        grid-row: 2 / 3;
+        background: #000;
+    }
+}
