@@ -5,7 +5,15 @@ header{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: calc(100% - 5px) 5px;
-    
+    line-height: 35px;
+    font-size: 14px;
+
+    .time{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        .time-current{ padding: 0 10px; }
+    }
+
     .timeline{
         text-align: center;
         grid-column: 1 / 4;
