@@ -16,17 +16,14 @@ Todo:
     ☐ General @general
 
 
-☐ General
+☐ General @general
     ☐ Need to create an update Stats function (res, people, buildings, etc) 
 
 
 ☐ Resources @resources
-    ✔ Develop Basic Structure of the resources @done(18-04-07 16:31)
-        ☐ Current, Increment (Based on Building Production),Max Capacity, Bonus
-    ✔ Add Basic HTML to show current res, max res, increment amount @done(18-04-07 16:31)
+    ☐ Add Basic HTML to show current res, max res, increment amount
     ☐ Build out a better HTML/CSS view of the resources
     ☐ 
-    ☐ Add Basic Increment Click to Add resources
     ☐ Decide the types of resources the game will have
         Wood, Stone, Food
         Lumber, Ore, Herbs
@@ -48,3 +45,6 @@ Todo:
 
 
 Archive:
+  ✔ Develop Basic Structure of the resources @done(18-04-08 15:06)
+  ✔ Current, Increment (Based on Building Production),Max Capacity, Bonus @done(18-04-08 15:06)
+  ✔ Add Basic Increment Click to Add resources @done(18-04-08 15:06)

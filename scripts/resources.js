@@ -15,14 +15,16 @@ G.res = {
 
     array : [],
 
-    updateRes : function() {
+    incrementRes : function() {
 
         for(i=0; i<G.res.array.length; i++){
-            var resName     = "G.res." + G.res.array[i],
-                current     = eval(resName).current,
-                increment   = eval(resName).increment,
-                max         = eval(resName).max,
-                bonus       = eval(resName).bonus;
+            var resName         = "G.res." + G.res.array[i],
+                current         = eval(resName).current,
+                increment       = eval(resName).increment,
+                max             = eval(resName).max,
+                bonus           = eval(resName).bonus,
+                html            = "$" + G.res.array[i],
+                incrementHTML   = eval(html).find("span[data-res-current='" + resName + "']");
             
             current += (increment * bonus);
             current = Number(current.toFixed(2));
@@ -30,9 +32,13 @@ G.res = {
             if(current < 0) current = 0;
 
             eval(resName).current = current;
+
+            incrementHTML.html(current);
         }
 
     },
+
+
 
     clickRes : function() {
         this.current += (this.click * this.clickBonus);
@@ -57,6 +63,7 @@ G.res = {
         G.res.array.push("stone");
     }
 
+    
 };
 
 

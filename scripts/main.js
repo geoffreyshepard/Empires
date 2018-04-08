@@ -1,7 +1,12 @@
 // Cache Dom Bindings
-var $timeDay     = $("span[data-time='day']"),
-    $timeMonth   = $("span[data-time='month']"),
-    $timeYear    = $("span[data-time='year']");
+var $timeDay    = $("span[data-time='day']"),
+    $timeMonth  = $("span[data-time='month']"),
+    $timeYear   = $("span[data-time='year']");
+
+var $food       = $("section[data-res='food']"),
+    $wood       = $("section[data-res='wood']"),
+    $stone       = $("section[data-res='stone']");   
+
 
 // Game Settings and Initialization
 var G = {
@@ -24,7 +29,7 @@ var G = {
         setTimeout(
             function(){ 
                 G.updateTime();
-                G.res.updateRes(); 
+                G.res.incrementRes(); 
                 G.loop();
             },
             this.settings.currentTickSpeed
