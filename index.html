@@ -1,61 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Empires</title>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="css/sass/main.css">
-</head>
-<body>
-    
+    <link rel="stylesheet" href="css/sass/main.css" />
+  </head>
+  <body>
     <header>
-        <section class="time">
-            <div class="time-current">
-                Day :
-                <span data-time="day"></span>
-            </div>
-            <div class="time-current">
-                Month :
-                <span data-time="month"></span>
-            </div>
-            <div class="time-current">
-                Year :
-                <span data-time="year"></span>
-            </div>
-        </section>
-        <section class="information">I</section>
-        <section class="speed">S</section>
-        <section class="timeline"></section>
+      <section class="time">
+        <div class="time-current">
+          Day :
+          <span data-time="day"></span>
+        </div>
+        <div class="time-current">
+          Month :
+          <span data-time="month"></span>
+        </div>
+        <div class="time-current">
+          Year :
+          <span data-time="year"></span>
+        </div>
+      </section>
+      <section class="information">I</section>
+      <section class="speed">S</section>
+      <section class="timeline"></section>
     </header>
-    
+
     <aside>
-        <section class="res" data-res="food">
-            Current: <span data-res-current="food"></span>
-            Max: <span data-res-max="food"></span>
-            <span data-res-inc="food"></span>
-        </section>
-        <section class="res" data-res="wood">
-            Current: <span data-res-current="wood"></span>
-            Max: <span data-res-max="wood"></span>
-            <span data-res-inc="wood"></span>
-        </section>
-        <section class="res" data-res="stone">
-            Current: <span data-res-current="stone"></span>
-            Max: <span data-res-max="stone"></span>
-            <span data-res-inc="stone"></span>
-        </section>
+      <section class="res" data-res="food">
+        Current: <span data-res-current="food"></span> Max:
+        <span data-res-max="food"></span>
+        <span data-res-inc="food"></span>
+      </section>
+      <section class="res" data-res="wood">
+        Current: <span data-res-current="wood"></span> Max:
+        <span data-res-max="wood"></span>
+        <span data-res-inc="wood"></span>
+      </section>
+      <section class="res" data-res="stone">
+        Current: <span data-res-current="stone"></span> Max:
+        <span data-res-max="stone"></span>
+        <span data-res-inc="stone"></span>
+      </section>
     </aside>
 
+    <aside>
+      <section class="citizens">
+        Current: <span data-citizens="current"></span> Max:
+        <span data-citizens="max"></span> Mood:
+        <span data-citizens="mood"></span>
+      </section>
+    </aside>
     <!-- Scripts -->
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+
     <script src="scripts/main.js"></script>
     <script src="scripts/resources.js"></script>
+    <script src="scripts/citizens.js"></script>
     <script src="scripts/gamestart.js"></script>
-    
-
-</body>
+  </body>
 </html>
